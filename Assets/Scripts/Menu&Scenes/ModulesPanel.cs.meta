@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: b9949a45825aed747a467f1d20a42b4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mainPanelPref: {fileID: 4755006494620286725, guid: 27a5739baef07f64a8ba96c5b991cc93,
+      type: 3}
+  - gunsPanelPref: {fileID: 4755006494620286725, guid: 6d7fbcea8a518864e857587cf2e2f55b,
+      type: 3}
+  - armorPanelPref: {fileID: 4755006494620286725, guid: 776e61f36a0739f4fb8e01940eb35904,
+      type: 3}
+  - toolsPanelPref: {instanceID: 0}
+  - ballisticGunsPanelPref: {instanceID: 0}
+  - plasmaGunsPanelPref: {instanceID: 0}
+  - explosiveGunsPanelPref: {instanceID: 0}
+  - lightArmorPanelPref: {instanceID: 0}
+  - heavyArmorPanelPref: {instanceID: 0}
+  - radarsPanelPref: {instanceID: 0}
+  - enginesPanelPref: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
