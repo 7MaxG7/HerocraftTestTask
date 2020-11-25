@@ -6,7 +6,6 @@ public class ModuleCollider : MonoBehaviour {
     protected int moduleSize;
     List<GameObject> holdedBlocks;
     public Vector3 beforeDruggingPosition;
-    //List<GameObject> beforeDruggingBlocks;
 
     protected virtual void Start() {
         holdedBlocks = new List<GameObject>(moduleSize);
@@ -19,10 +18,6 @@ public class ModuleCollider : MonoBehaviour {
     }
     protected void OnTriggerExit2D(Collider2D collision) {
         holdedBlocks.Remove(collision.gameObject);
-    }
-    public void SetBeforeDruggingPosition() {
-        //beforeDruggingBlocks = new List<GameObject>(holdedBlocks);
-        beforeDruggingPosition = gameObject.transform.parent.position;
     }
     /// <summary>
     /// After finishing drugging counts new position or returns previous object's position if it's not putted to the ship's blocks
@@ -46,7 +41,6 @@ public class ModuleCollider : MonoBehaviour {
             newPosition.y /= holdedBlocks.Count;
             return newPosition;
         } else {
-            //holdedBlocks = new List<GameObject>(beforeDruggingBlocks);
             return beforeDruggingPosition;
         }
     }

@@ -25,8 +25,7 @@ public class ModulePositioner : MonoBehaviour {
     }
     protected void OnMouseDown() {
         SRcomp.sortingOrder = 3;
-        //moduleCollider.beforeDruggingPosition = transform.position;
-        moduleCollider.SetBeforeDruggingPosition();
+        moduleCollider.beforeDruggingPosition = transform.position;
         StartCoroutine(moduleCollider.SetHoldedBlocksEmptiness(true));
         StartCoroutine(moduleCollider.ColorBlocks(Color.white));
     }
